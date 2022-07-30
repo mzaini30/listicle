@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build && tsx script/afterBuild.ts",
+    "build": "vue-tsc --noEmit && vite build --base /assets/ && tsx script/afterBuild.ts",
     "build:ssg": "npm run build && presite dist",
     "preview": "vite preview"
   },
@@ -19,6 +19,7 @@
     "@vitejs/plugin-vue": "^2.3.1",
     "@vueuse/head": "^0.7.6",
     "happy-dom": "^5.3.1",
+    "latest-blogspot": "^1.0.4",
     "markdown-it": "^13.0.1",
     "markdown-it-prism": "^2.2.4",
     "presite": "^2.1.2",
